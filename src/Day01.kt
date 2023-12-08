@@ -14,8 +14,6 @@ fun main() {
         for (i in test.indices) {
             if (targetFloor(test.substring(0, i)) == -1) {
                 return i
-            } else {
-//                print(targetFloor(test.substring(0, i)))
             }
         }
         return -1
