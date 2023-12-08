@@ -2,7 +2,7 @@ fun main() {
 
 
     fun findSmallestNumber(line: String, prefix: String): Int {
-        var md5: String = ""
+        var md5: String
         var testVal = 0
         do {
             testVal++
@@ -13,14 +13,14 @@ fun main() {
         return testVal
     }
 
-    fun part1(line: String): Int {
+    fun part1(key: String): Int {
 
-        return findSmallestNumber(line, "00000")
+        return findSmallestNumber(key, "00000")
     }
 
-    fun part2(line: String): Int {
+    fun part2(key: String): Int {
 
-        return findSmallestNumber(line, "000000")
+        return findSmallestNumber(key, "000000")
     }
 
     check(part1("abcdef") == 609043)
