@@ -153,7 +153,7 @@ fun main() {
      */
     fun part2(lines: List<String>, bValue: Int): HashMap<String, Int> {
         val commands = parseCommands(lines)
-        commands.find { it.target == "b" }!!.left = bValue.toString()
+        commands.find { it.target == "b" }?.left = bValue.toString()
 
         return processCommands(commands)
     }
