@@ -34,9 +34,8 @@ fun main() {
     fun part2(lines: List<String>, seconds: Int): Int {
         val reindeers = parseReindeerData(lines)
 
-        var scores: List<Score>
         for (i in 0..seconds) {
-            scores = reindeers.map { reindeer ->
+            val scores = reindeers.map { reindeer ->
                 Score(reindeer, runReindeerRun(reindeer, i + 1))
             }
 
