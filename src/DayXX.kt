@@ -1,11 +1,11 @@
 fun main() {
 
 
-    fun part1(line: List<String>): Int {
+    fun part1(lines: List<String>): Int {
         return 1
     }
 
-    fun part2(line: List<String>): Int {
+    fun part2(lines: List<String>): Int {
         return -1
     }
 
