@@ -4,3 +4,4 @@ build
 input/*
 !input/*test*
 output/*
+src/Test.kt
